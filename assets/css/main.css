@@ -1,0 +1,129 @@
+:root{
+  --vermelho: #E50914;
+  --preto: #141414;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* elementos base */
+
+body{
+  background: var(--preto);
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+}
+
+header .container{
+  width: 100%;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  
+}
+
+.cabecalho{
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;  
+}
+
+.cabecalho img{
+  width: 4%;
+  border-radius: 10px;
+}
+
+.cabecalho i, .perfil, img {
+  margin: 10px;
+}
+
+header .logo{
+ width: 100px;
+}
+
+header nav a{
+  font-weight: 600;
+  text-decoration: none;
+  color: #FFF;
+  margin-left: 20px ;
+}
+
+header .cabecalho a{
+  text-decoration: none;
+  color: #FFF;
+  margin-right: 10px;
+}
+
+header nav a:hover{
+  
+  color: #AAA;
+}
+
+/* configuração filme princpal */
+.filme-principal{
+  font-size: 16px;
+  background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%), url('../img/barbie.webp');
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.filme-principal .descricao{
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.filme-principal .titulo{
+  margin-top: 15%;
+  font-size: 40px;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.botao{
+  background-color: rgba(0,0,0,.50);
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  margin-right: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.botao:hover{
+  background-color: white;
+  color: black;
+}
+
+.botao i{
+  font-size: 20px;
+  margin-right: 8px;
+}
+
+.container{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.filme-principal .container{
+  width: 70%;
+}
+
+.box-filme{
+  height: 100%;
+  width: 100%;
+  display: block;
+  cursor: pointer;
+}
+
+.carrosel-filmes{
+  margin-top: 15px;
+}
